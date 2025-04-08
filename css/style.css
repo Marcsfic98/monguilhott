@@ -238,8 +238,9 @@
       color: #2d2d2d;
       padding-bottom: 200px;
       background-image: url('../img/bg_02.png');
-      position: absolute;
-      top: 1600px;
+      position: relative;
+      top: -110px;
+      z-index: 1;
      }
 
      section.depoimento h2{
@@ -252,6 +253,214 @@
       text-align: center;
       font-size: 15px;
      }
+
+
+     /*etapas */
+      section.etapas{
+         padding: 40px 0;
+
+      }
+
+      section.etapas .container{
+         max-width: 1200px;
+      }
+
+      section.etapas h2{
+         text-align: center;
+         color: #3b3e42;
+         margin-bottom: 100px;
+      }
+      section.etapas b{
+         color: #509d87;
+      }
+
+      .etapas__single{
+         float: left;
+         width: 50%;
+      }
+
+      .etapas__group img{
+            max-width: 100%;
+            float: left;
+         }
+
+      .etapas__group:nth-of-type(1) img{
+         width: 50%;
+      }
+
+      .etapas__single .etapas__group:nth-of-type(2) img{
+         float: right;
+         
+        } 
+
+        .etapas__single .etapas__group:nth-of-type(3) img{
+         float: left;
+        } 
+      .etapas__group p{
+            float: left;
+            color: #509d87;
+           padding-top: 140px;
+           padding-left: 30px;
+         }
+
+      .etapas__group2{
+         margin-bottom: 40px;
+         padding: 0 30px;
+         position: relative;
+         top: -70px;
+      }
+
+     
+      .etapas__group2 .circle{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 1px solid #03ca9f;
+      position: relative;
+      float: left;
+      
+     }
+
+      .circle span{
+      position: relative;
+      top: 27%;
+      left: 40%;
+      transform: translate(-27% ,-40%);
+      color: #03ca9f;
+      font-size: 40px;
+     }
+
+     .circle .line{
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translate(-50% , -0);
+      height: 40px;
+      width: 1px;
+      background-color: #03ca9f;
+     }
+
+     .etapas_descricao{
+      float: left;
+      width: calc(100% - 100px);
+      padding: 0 20px;
+     }
+
+     .etapas_descricao h3{
+      font-size: 18px;
+      color: #03ca9f;
+     }
+
+     .etapas_descricao p{
+      color: #2d2d2d;
+      font-weight: bold;
+      font-size: 14px;
+     }
+
+     section.diferencas{
+      padding: 50px 0;
+     }
+
+
+     .diferencas_single{
+      float: left;
+      width: 50%;
+     }
+
+     section.diferencas .container{
+      max-width: 800px;
+      text-align: center;
+     }
+
+     .diferencas_single h2 {
+      font-size: 30px;
+      font-weight: normal;
+      
+     }
+
+     .diferencas_single h2 , .itens_diferencas1 span{
+      color: #a9c4b8;
+     }
+
+     .itens_diferencas1{
+      display: inline-block;
+      margin-top: 10px;
+      position: relative;
+     }
+
+     .line_diferencas1{
+      position: absolute;
+      left: -5px;
+      top: 11px;
+      width: 110%;
+      height: 2px;
+      transform:rotate(-3deg);
+      background-color: #e89595  ;
+      z-index: 999;
+     }
+
+     .itens_diferencas1 span{
+      font-weight: bold;
+      font-size: 18px;
+
+     }
+
+     .itens_diferencas2 span{
+      color: #7dd5b0;
+      font-size: 18px;
+      font-weight: bold;
+     }
+
+     .itens_diferencas2{
+      margin-top: 10px;
+     }
+
+     @media screen and (max-width:1024px) {
+         .etapas__single{
+            width: 100%;
+         }
+
+         section.etapas .container{
+            max-width: 700px;
+         }
+
+        .etapas__group img{
+         max-width: 100%;
+         float: none;
+         display: block;
+         margin: 0 auto;
+        }
+
+        .etapas__single .etapas__group:nth-of-type(1) img{
+         max-width: 100%;
+         width: auto;
+        } 
+
+        .etapas__single .etapas__group:nth-of-type(2) img{
+         max-width: 100%;
+         width: auto;
+         float: none;
+         padding-top: 40px;
+        } 
+
+        .etapas__single .etapas__group:nth-of-type(3) img{
+         max-width: 100%;
+         width: auto;
+         float: none;
+         padding-top: 40px;
+         padding-bottom: 60px;
+        } 
+
+        .etapas__group p{
+         text-align: center;
+         display: block;
+         float: none;
+         padding-left: 0;
+         padding-top: 0;
+         width: 100%;
+        }
+     }
+
 
      @media screen and (max-width:900px) {
       .one{
@@ -292,8 +501,15 @@
       .padSobre{
          padding: 0;
       }
+     
       section.depoimento{
-         position: absolute;
-         top: 3100px;
+         top: 0;
+      }
+
+      .sobre-container img{
+         top: 0;
       }
      }
+
+   
+   

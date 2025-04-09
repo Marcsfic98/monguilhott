@@ -6,21 +6,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Monguilhott</title>
 </head>
 <body>
+
+    <ul class="nav_mobile">
+        <li><span></span><a href="#one">Invisalign</a></li>
+        <li><span></span><a href="#diferenciais">Beneficios</a></li>
+        <li><span></span><a href="#etapas">Serve para mim ?</a></li>
+        <li><span></span><a href="#contato">Contatos</a></li>
+    </ul>
+
     <section class="header-master">
         <header>
             <div class="container">
                 <div class="logo"></div><!--logo-->
                 <nav class="desktop">
                     <ul>
-                        <li class="selected"><span></span><a href="">Invisalign</a></li>
-                        <li><span></span><a href="">Beneficios</a></li>
-                        <li><span></span><a href="">Serve para mim ?</a></li>
-                        <li><span></span><a href="">Contatos</a></li>
+                        <li class="selected"><span></span><a href="#one">Invisalign</a></li>
+                        <li><span></span><a href="#diferenciais">Beneficios</a></li>
+                        <li><span></span><a href="#etapas">Serve para mim ?</a></li>
+                        <li><span></span><a href="#contato">Contatos</a></li>
                     </ul>
+                </nav>
+
+                <nav class="mobile">
+                    <h3><i class="fa fa-bars"></i></h3>
+                  
                 </nav>
                 <div class="telefone-header">
                     <span>(81) 3222-6591</span>
@@ -31,7 +45,7 @@
 
         <div class="content-header">
             <div class="container">
-                <div class="one">
+                <div id="one" class="one">
                     <h2>Seu sorriso perfeito através de um tratamento discreto e inovador, em Recife. </h2>
                     <p>Alinhe seus dentes com conforto , praticidade e liberdade !<b> Deixe seu email </b>para que a Dra. Leda possa entrar em contato e agendar uma avaliação gratuita.</p>
                     <form>
@@ -55,7 +69,7 @@
 
     </section><!--header-master-->
 
-    <section class="diferenciais">
+    <section id="diferenciais" class="diferenciais">
         <div class="container">
             <div class="diferencial-single">
                 <img src="img/icones/icone04.png">
@@ -120,7 +134,7 @@
         </div><!--container-->
     </section><!--depoimento-->
 
-    <section class="etapas">
+    <section id="etapas" class="etapas">
         <div class="container">
             <h2>Sem dúvidas,<b> serve para você! </b> <br/> Veja como funciona :</h2>
             <div class="etapas__single">
@@ -259,9 +273,9 @@
                 </div><!--itens-diferencas1-->
             </div><!--diferenca_single-->
 
+            <div class="listra" style="display: none;"></div>
 
-
-            <div class="diferenca_single">
+            <div class="diferencas_single">
                 <img src="./img/invisalign.jpg" alt="">
                 <div class="itens_diferencas2">
                     
@@ -297,6 +311,50 @@
             <div class="clear"></div><!--clear-->
         </div><!--container-->
     </section><!--diferencas-->
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em contato:</h2>
+
+            <p>Telefone: (81) 3222-6591<br/>
+               E-mail:contato@Monguilhott.com.br<br/>
+               Enderço: Avenida Norte ,354 Edificio Rio Branco , Quarto Andar<br/>
+               Sala 301 , Recife -PE</p>
+            <form>
+                <div class="form_group">
+                    
+                    <input type="text" name="nome" placeholder="*Nome" required>
+                </div><!--form_group-->
+
+                <div class="form_group">
+                    
+                    <input type="email" name="email" placeholder="*E-mail" required>
+                </div><!--form_group-->
+
+                <div class="form_group">
+                    
+                    <input type="text" name="nome" placeholder="*Telefone" required>
+                </div><!--form_group-->
+
+                <div class="form_group">
+                    
+                    <textarea placeholder="Opcional" name="Mensagem"></textarea>
+                </div><!--form_group-->
+
+
+                <div class="form_group">
+                    
+                    <input type="submit" name="acao" value="Enviar!" >
+                </div><!--form_group-->
+            </form>
+        </div><!--container-->
+    </section><!--contato-->
+    
+    <footer>
+        <div class="container">
+            <img src="img/logo.png" alt="">
+        </div><!--container-->
+    </footer>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="./js/jquery.js"></script>
 </body>

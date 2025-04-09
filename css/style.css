@@ -43,23 +43,59 @@
         background-size: 100% 100%;
      }
 
-     header nav{
+     nav.desktop{
         float: left;
         padding-left: 60px;
      }
 
-     header nav ul{
+     nav.mobile{
+      display: none;
+      float: right;
+      position: relative;
+      top: 10px;
+      margin-right: 10px;
+     }
+
+     ul.nav_mobile{
+      width: 100%;
+      display: none;
+      list-style: none;
+      background-color: #6cc5b2;
+      position: absolute;
+      left: 0;
+      top: 70px;
+     }
+
+     ul.nav_mobile li{
+      width: 100%;
+      text-align: center;
+      padding: 9px 0;
+      border-bottom: 1px solid white;
+     }
+
+     ul.nav_mobile a{
+      color: white;
+      text-decoration: none;
+     }
+
+     nav.mobile h3{
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+     }
+
+     nav.desktop ul{
         list-style-type: none;
      }
 
-     header li{
+     nav.desktop li{
         padding: 0 15px;
         display: inline-block;
         font-size: 16px;
         color: white;
      }
 
-     .selected{
+     nav.desktop .selected{
         color: #509d87;
         position: relative;
      }
@@ -72,7 +108,7 @@
         background: #509d87;
      }
 
-     header li a{
+     header nav.desktop li a{
         color: inherit;
         text-decoration: none;
      }
@@ -415,6 +451,77 @@
       margin-top: 10px;
      }
 
+     section.contato{
+      padding: 40px 0;
+      background: #98FCDE;
+     }
+
+     .contato h2{
+      text-align: center;
+      color:#509d87;
+      font-size: 24px;
+     }
+
+     .contato p{
+      text-align: center;
+      color: #509d87;
+      font-family: 14px;
+      
+      border-bottom: 1px solid #509d87;
+      padding: 10px 0;
+      
+     }
+
+     .contato input{
+      width: 100%;
+      height: 40px;
+      border-radius: 40px;
+      border: 1px solid #ccc;
+      padding-left: 12px;
+      margin-bottom: 10px;
+     }
+
+     section.contato .container{
+      max-width: 800px;
+     }
+
+     .contato .form_group{
+      margin-top: 10px;
+     }
+
+     .contato textarea{
+      width: 100%;
+      height: 120px;
+      border-radius: 60px;
+      padding: 20px;
+      margin-bottom: 10px;
+      resize: none;
+     }
+
+     .contato input[type=submit]{
+      width: 170px;
+      height: 60px;
+      border-radius: 100px;
+      background-color: #0ed2a7;
+      border: 0;
+      color: white;
+      font-weight: bold;
+      display: block;
+      margin: 0 auto;
+      cursor: pointer;
+
+     }
+
+     .contato input:focus{
+      outline: 0;
+     }
+
+     footer{
+      background-color: #6cc5b2;
+      text-align: center;
+      padding: 20px 0;
+     }
+
      @media screen and (max-width:1024px) {
          .etapas__single{
             width: 100%;
@@ -459,10 +566,39 @@
          padding-top: 0;
          width: 100%;
         }
+
+        section.diferencas{
+         padding: 0;
+        }
+
+        .diferencas_single{
+         width: 100%;
+         margin-bottom: 40px;
+         border-right: 0 !important;
+        
+        }
+
+        .listra{
+         display: block !important;
+         width: 80%;
+         height: 2px;
+         background-color: #757070;
+         margin: 0 auto;
+         position: relative;
+         top: 250px;
+        }
+
+
      }
 
 
      @media screen and (max-width:900px) {
+
+      nav.mobile{
+         display: block;
+      }
+
+     
       .one{
          text-align: center;
          width: 100%;
